@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  color: #111111;
+  min-height: 100vh;
+  background-color: #2b2a29;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main .result {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.main .result .title {
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #111111;
+  user-select: none;
+}
+.main .result div {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main .result div #calc {
+  border: none;
+  width: 100%;
+  background: none;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 10px;
+  line-break: anywhere;
+  padding: 0 20px;
+  user-select: none;
+  color: #a3a3a3;
+}
+.main .result div #result {
+  border: none;
+  width: 100%;
+  background: none;
+  font-size: 50px;
+  text-align: center;
+  outline: none;
+  color: #111111;
+}
+.main .keys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+.main .keys .row {
+  display: flex;
+}
+.main .keys .row .lighten {
+  color: #1a1a1a50;
+}
+.main .keys .row .lighten:hover {
+  color: #111111;
+}
+.main .keys .row .key {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.3s;
+  user-select: none;
+}
+.main .keys .row .key:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 0 0 5px rgba(235, 235, 235, 0.455);
+  transition: 0.2s;
+  flex-direction: column;
+}
+.main .keys .row .key#division {
+  color: #ff2525;
+}
+.main .keys .row .key#multiply {
+  color: #ff2525;
+}
+.main .keys .row .key#addition {
+  color: #ff2525;
+}
+.main .keys .row .key#subtract {
+  color: #ff2525;
+}
+.main .keys .row .key#equal {
+  background-color: #ff2525;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.main .keys .row .key#equal:hover {
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
+}
